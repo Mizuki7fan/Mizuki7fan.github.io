@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "启动 MkDocs 服务器",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/mkdocs",
+            "args": ["serve", "--dev-addr", "0.0.0.0:8888"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "stopOnEntry": false,
+            "showReturnValue": true
+        }
+    ]
+}

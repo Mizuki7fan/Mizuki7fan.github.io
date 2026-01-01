@@ -1,0 +1,49 @@
+site_name: Meigyoku Wiki
+site_description: 我的个人Wiki站点
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+
+nav:
+  - 首页: index.md
+  - Hello World: helloworld.md
+
+dev_addr: 0.0.0.0:8888
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+  # - git-revision-date-localized:
+      # type: datetime
+plugins:
+  - pdf-export:
+      media_type: print
+      enabled: true
+      combined: true           # 将所有页面合并为一个PDF
+      cover: true              # 包含封面页
+      cover_title: "Meigyoku Wiki"  # 封面标题
+      output_path: "site/pdf/meigyoku-wiki.pdf"  # 输出路径
