@@ -3,6 +3,8 @@ site_description: 我的个人Wiki站点
 
 theme:
   name: material
+  logo: asset/favi.jpg # logo 图标
+  favicon: asset/favi.jpg # 网页标签图标
   language: zh
   features:
     - navigation.tabs
@@ -17,16 +19,24 @@ theme:
       accent: indigo
 
 nav:
-  - 首页: index.md
-  - Hello World: helloworld.md
+  - Welcome: index.md
+  - Quant:
+    - 术语:
+      - 夏普比率和偏度:  quant/term/夏普比率和偏度.md
 
-dev_addr: 0.0.0.0:8888
+dev_addr: 0.0.0.0:6324
 
 markdown_extensions:
   - toc:
       permalink: true
   - tables
   - fenced_code
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js 
 
 # Plugins
 plugins:
