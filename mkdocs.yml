@@ -3,8 +3,8 @@ site_description: 我的个人Wiki站点
 
 theme:
   name: material
-  logo: asset/favi.jpg # logo 图标
-  favicon: asset/favi.jpg # 网页标签图标
+  logo: asset/favi.ico # logo 图标
+  favicon: asset/favi.ico # 网页标签图标
   language: zh
   features:
     - navigation.tabs
