@@ -1,5 +1,11 @@
-site_name: Meigyoku Wiki
-site_description: 我的个人Wiki站点
+site_name: mizuki7fan site
+site_url: https://mizuki7fan.github.io/
+site_author: meigyoku
+site_description: mizuki7fan site
+
+# Repository
+repo_name: mizukifan site
+repo_url: https://github.com/Mizuki7fan/Mizuki7fan.github.io
 
 theme:
   name: material
@@ -19,7 +25,9 @@ theme:
       accent: indigo
 
 nav:
-  - Welcome: index.md
+  - Welcome:
+    - About: index.md
+    - Helloworld: helloworld.md
   - Quant:
     - 术语:
       - 夏普比率和偏度:  quant/term/夏普比率和偏度.md
@@ -51,9 +59,4 @@ plugins:
       # type: datetime
 plugins:
   - pdf-export:
-      media_type: print
-      enabled: true
-      combined: true           # 将所有页面合并为一个PDF
-      cover: true              # 包含封面页
-      cover_title: "Meigyoku Wiki"  # 封面标题
-      output_path: "site/pdf/meigyoku-wiki.pdf"  # 输出路径
+      enabled: false
