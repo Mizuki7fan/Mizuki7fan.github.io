@@ -16,6 +16,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - search.highlight
+    - content.annotate
   palette:
     - scheme: default
       primary: indigo
@@ -31,6 +32,9 @@ nav:
   - Quant:
     - 术语:
       - 夏普比率和偏度:  quant/term/夏普比率和偏度.md
+  - Geometry:
+    - Volume Mesh:
+      - 综述: geometry/volume mesh/综述.md
 
 dev_addr: 0.0.0.0:6324
 
@@ -41,6 +45,8 @@ markdown_extensions:
   - fenced_code
   - pymdownx.arithmatex:
       generic: true
+  - admonition
+  - pymdownx.details
 
 extra_javascript:
   - javascripts/mathjax.js
