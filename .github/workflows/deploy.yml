@@ -39,10 +39,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
           pip install mkdocs-pdf-export-plugin
+          pip install pyyaml-include
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Build with MkDocs
-        run: mkdocs build --strict
+        run: python run_mkdocs.py build --strict
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
