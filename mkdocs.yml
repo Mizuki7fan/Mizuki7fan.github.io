@@ -7,6 +7,8 @@ site_description: mizuki7fan site
 repo_name: mizukifan site
 repo_url: https://github.com/Mizuki7fan/Mizuki7fan.github.io
 
+use_directory_urls: false
+
 theme:
   name: material
   logo: asset/favi.ico # logo 图标

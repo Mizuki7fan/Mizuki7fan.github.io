@@ -36,4 +36,28 @@
 > - 其顶面上的两个点$x_1=(0.3,0.5,1), x_2=(0.7,0.8,1)$，其局部金字塔都是**上半空间**$\{(x,y,z):z\ge0\}$,两点同属一个`二维面(面)`
 > - 其边上两个点$x_1=(0.3,1,1), x_2=(0.7,1,1)$的局部金字塔是**90度的楔形**$\{(x,y,z):y\ge0,z\ge0\}$, 两者同属一个`一维面(边)`
 > - 其顶点$(1,1,1)$的局部金字塔是**第一象限**，属于`零维面`。该立方体的每个顶点都属于一个单独的`零维面(点)`
+> - 其内部的点，局部金字塔是整个$\mathbb{R}^3$
+> - 其外部的点，局部金字塔为$\emptyset$
 
+### 二维平面上的一个例子
+给定以下5个半平面：
+$$
+h_1: y \ge 0 \quad h_2: x-y \ge 0 \quad h_3: x+y \le 3 \quad h_4:x-y \ge 1 \quad h_5: x+y \le 2
+$$
+
+则图中的多边形区域可以定义为:
+$$
+P:(h_1 \cap h_2 \cap h_3) - (h_4 \cap h_5)
+$$
+
+<div style="display: flex; gap: 20px; flex-wrap: nowrap; justify-content: center; align-items: flex-start;">
+  <div style="text-align: center;">
+    <img src="../../asset/nef_example.png" alt="二维Nef多面体示例">
+    <div style="margin-top: 8px; font-size: 0.9em; color: #666;">二维Nef多面体</div>
+  </div>
+  
+  <div style="text-align: center;">
+    <img src="../../asset/nef_pyramids.png" alt="局部金字塔示意图" >
+    <div style="margin-top: 8px; font-size: 0.9em; color: #666;">各个"面"的局部金字塔</div>
+  </div>
+</div>
