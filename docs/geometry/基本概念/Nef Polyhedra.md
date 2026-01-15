@@ -1,8 +1,8 @@
-# CGAL支持的3D Boolean Operations on Nef Polyhedra
+# Nef Polyhedra
 ```https://doc.cgal.org/latest/Nef_3/index.html```
 
-# Constructive Solid Geometry (CSG) 和 Boundary Representations (B-rep)
-- 构造立体几何(CSG)和边界表示(B-rep)是实体建模的两种主要的表示方案，各有优劣
+# CSG和B-rep
+- 构造立体几何(CSG, Constructive Solid Geometry)和边界表示(B-rep, Boundary Representations)是实体建模的两种主要的表示方案，各有优劣
 - CSG是一个树结构, 其叶节点是基本几何形状(primitive solids), 中间节点是布尔运算操作。
 - CSG的布尔运算是封闭的，不会产生不属于 CSG 表示能力的新几何类型，但表达能力受基本几何形状的限制
 - B-rep通过`边界`和`内外`决定了实体的形状。通过精确的数学表达、边界方程定义的曲面算B-rep，通过离散三角面片定义的也是B-rep.

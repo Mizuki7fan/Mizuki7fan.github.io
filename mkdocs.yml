@@ -28,9 +28,7 @@ theme:
       accent: indigo
 
 nav:
-  - Welcome:
-    - About: index.md
-    - Helloworld: helloworld.md
+  - Welcome: helloworld.md
   - !include nav/Quant.yml
   - !include nav/Geometry.yml
 
