@@ -131,12 +131,17 @@ def update_mkdocs_nav(mkdocs_file="mkdocs.yml"):
     nav_dir = Path("nav")
     nav_files = sorted(nav_dir.glob("*.yml"))
     
+    # 修复：避免在nav:后产生多余空行
     new_nav_content = "nav:\n"
     new_nav_content += "  - Welcome: index.md\n"
     
     for nav_file in nav_files:
         category_name = nav_file.stem.lower()
         new_nav_content += f"  - !include nav/{nav_file.name}\n"
+    
+    # 移除最后一个多余的换行符
+    if new_nav_content.endswith("\n"):
+        new_nav_content = new_nav_content.rstrip("\n")
     
     # 替换nav配置
     new_content = content[:nav_start] + new_nav_content + content[nav_end:]
