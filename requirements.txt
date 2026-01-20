@@ -11,4 +11,4 @@ PyYAML==6.0.2
 MarkupSafe==3.0.2
 click==8.1.8
 watchdog==6.0.0
-weasyprint==63.0
+weasyprint==68.0
