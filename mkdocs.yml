@@ -26,15 +26,12 @@ theme:
     - scheme: slate
       primary: indigo
       accent: indigo
-
+      
 nav:
   - Welcome: index.md
   - !include nav/Geometry.yml
   - !include nav/Quant.yml
-
-
-
-
+  - !include nav/生活健康.yml
 
 dev_addr: 0.0.0.0:6324
 
