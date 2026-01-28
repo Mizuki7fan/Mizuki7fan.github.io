@@ -3,10 +3,9 @@
     "configurations": [
         {
             "name": "启动 MkDocs 服务器",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/.venv/bin/mkdocs",
-            "args": ["serve", "--dev-addr", "0.0.0.0:8888"],
+            "program": "${workspaceFolder}/script/create_mkdocs_yml.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
