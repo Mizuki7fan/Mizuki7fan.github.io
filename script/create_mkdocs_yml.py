@@ -9,8 +9,7 @@ from pathlib import Path
 from typing import Dict, List, Any
 
 class MkDocsConfigGenerator:
-    """MkDocs配置文件生成器"""
-    
+    """MkDocs配置文件生成器"""    
     def __init__(self, project_root: str = "."):
         """
         初始化生成器
