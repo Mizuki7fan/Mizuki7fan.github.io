@@ -1,15 +1,6 @@
 {
-    "python.defaultInterpreterPath": ".venv/bin/python",
-    "python.terminal.activateEnvironment": true,
     "files.exclude": {
-        "mkdocs.yml": true,
+        "mkdocs.yml": true
     },
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "args": ["-c", "exec bash --rcfile <(echo 'source ~/.bashrc; source /data/workspace/configure/.bashrc')"]
-        }
-    }
-
+    "python.defaultInterpreterPath": ".venv/bin/python"
 }

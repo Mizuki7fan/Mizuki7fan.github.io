@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "Mizuki7fan.github.io",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "args": ["--rcfile", "${workspaceFolder}/.bashrc", "-i"]
+      }
+    }
+  }
+}
