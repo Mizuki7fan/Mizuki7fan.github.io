@@ -1,0 +1,55 @@
+/* 全局隐藏右侧目录 (TOC) */
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+/* 在大屏幕上强制使用抽屉式导航 (Drawer) */
+@media screen and (min-width: 1220px) {
+    /* 显示汉堡菜单按钮 */
+    .md-header__button[for="__drawer"] {
+        display: block !important;
+    }
+
+    /* 将左侧导航栏转换为抽屉样式 */
+    .md-sidebar--primary {
+        position: fixed !important;
+        top: 0 !important;
+        left: -12.1rem !important;
+        width: 12.1rem !important;
+        height: 100% !important;
+        z-index: 100 !important;
+        background-color: var(--md-default-bg-color) !important;
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        display: block !important;
+    }
+
+    /* 当抽屉打开时滑出 */
+    [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+        transform: translateX(12.1rem) !important;
+        box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12) !important;
+    }
+
+    /* 确保遮罩层在大屏幕上可用 */
+    .md-overlay {
+        display: block !important;
+        pointer-events: none !important;
+    }
+
+    /* 抽屉打开时的遮罩层效果 */
+    [data-md-toggle="drawer"]:checked ~ .md-overlay {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        background-color: rgba(0,0,0,.54) !important;
+        z-index: 99 !important;
+    }
+
+    /* 调整主内容区域，使其占据全宽并居中 */
+    .md-main__inner {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .md-content {
+        margin-left: 0 !important;
+        max-width: 100% !important;
+    }
+}
